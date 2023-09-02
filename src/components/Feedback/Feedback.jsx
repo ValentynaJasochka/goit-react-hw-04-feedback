@@ -33,7 +33,7 @@ export const Feedback = () => {
 
   useEffect(() => {
     return setPositiveFeedback(Math.round((good * 100) / total));
-  }, [total]);
+  }, [good, total]);
 
   return (
     <>
